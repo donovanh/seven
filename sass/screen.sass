@@ -77,3 +77,10 @@
     
     span.text
       font-size: 450px
+
+@media only screen and (min-height: 800px)
+  .background
+    @include transform(scale(1.5) rotateX(45deg))
+
+    &:after
+      top: -40%

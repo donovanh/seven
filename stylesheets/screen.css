@@ -128,3 +128,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-top: -40px; }
     .container span.text {
       font-size: 450px; } }
+@media only screen and (min-height: 800px) {
+  .background {
+    -webkit-transform: scale(1.5) rotateX(45deg);
+    -moz-transform: scale(1.5) rotateX(45deg);
+    -ms-transform: scale(1.5) rotateX(45deg);
+    -o-transform: scale(1.5) rotateX(45deg);
+    transform: scale(1.5) rotateX(45deg); }
+    .background:after {
+      top: -40%; } }
