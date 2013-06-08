@@ -14,5 +14,5 @@ See [a live demo](http://hop.ie/seven). It should look something like this:
 
 It's based on this banner from WWDC 2013:
 
-<img src="http://hop.ie/seven/images/banner.jpeg" />
+<img src="http://hop.ie/seven/images/banner.jpeg?1" />
 
