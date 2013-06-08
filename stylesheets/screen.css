@@ -100,12 +100,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, white), color-stop(60%, rgba(255, 255, 255, 0))); }
 
 .container {
-  width: 280px;
+  width: 420px;
   margin: 0 auto;
   position: relative; }
   .container span.text {
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", Helvetica, Arial, Sans-serif;
-    font-size: 500px;
+    font-size: 780px;
     position: absolute;
     top: 0; }
     .container span.text.part1 {
@@ -129,18 +129,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       -ms-text-fill-color: transparent;
       text-fill-color: transparent; }
 
+@media only screen and (max-height: 660px) {
+  .container {
+    width: 380px; }
+    .container span.text {
+      font-size: 640px; } }
 @media only screen and (max-height: 500px) {
   .container {
-    width: 240px; }
+    width: 300px; }
     .container span.text {
-      font-size: 400px; } }
-@media only screen and (max-height: 400px) {
-  .container {
-    width: 200px; }
-    .container span.text {
-      font-size: 340px; } }
-@media only screen and (max-height: 300px) {
-  .container {
-    width: 150px; }
-    .container span.text {
-      font-size: 260px; } }
+      font-size: 500px; } }
