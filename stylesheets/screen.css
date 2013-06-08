@@ -137,6 +137,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @media only screen and (max-height: 540px) {
   .container {
     width: 280px;
-    margin-top: -30px; }
+    margin-top: -40px; }
     .container span.text {
-      font-size: 500px; } }
+      font-size: 480px; } }
