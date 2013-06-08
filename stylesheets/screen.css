@@ -134,8 +134,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 380px; }
     .container span.text {
       font-size: 640px; } }
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 540px) {
   .container {
-    width: 300px; }
+    width: 280px;
+    margin-top: -30px; }
     .container span.text {
       font-size: 500px; } }
