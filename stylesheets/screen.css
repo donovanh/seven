@@ -45,7 +45,6 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* Mixins to extend what Compass provides */
 .background-container {
   position: absolute;
   top: 0;
@@ -111,23 +110,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .container span.text.part1 {
       background: -webkit-gradient(linear, left top, right top, color-stop(0%, #67e1c9), color-stop(10%, #67e1c9), color-stop(40%, #60b6cf), color-stop(60%, #1f7acb), color-stop(80%, #212f7f));
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
-      -o-text-fill-color: transparent;
-      -ms-text-fill-color: transparent;
-      text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent; }
     .container span.text.part2 {
       background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #c71f1f), color-stop(30%, #c71f1f), color-stop(40%, #a24b92), color-stop(50%, #3791ea), color-stop(60%, rgba(33, 47, 127, 0)));
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
-      -o-text-fill-color: transparent;
-      -ms-text-fill-color: transparent;
-      text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent; }
 
 @media only screen and (max-height: 660px) {
   .container {

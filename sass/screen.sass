@@ -1,6 +1,5 @@
 @import compass/reset
 @import compass/css3
-@import mixins
 
 .background-container
   position: absolute
@@ -54,14 +53,14 @@
 
     &.part1
       background: -webkit-gradient(linear, left top, right top, color-stop(0%,#67e1c9), color-stop(10%,#67e1c9), color-stop(40%,rgba(96,182,207,1)), color-stop(60%,rgba(31,122,203,1)), color-stop(80%,rgba(33,47,127,1)))
-      @include background-clip(text)
-      @include text-fill-color(transparent)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
       
 
     &.part2
       background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#c71f1f), color-stop(30%,#c71f1f), color-stop(40%, #a24b92), color-stop(50%,#3791ea), color-stop(60%,rgba(33,47,127,0)))
-      @include background-clip(text)
-      @include text-fill-color(transparent)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
 
 @media only screen and (max-height: 660px)
   .container
