@@ -8,3 +8,9 @@ Since this example uses webkit-specific filter, it won't look right in anything 
 
 See [a live demo](http://hop.ie/seven).
 
+## Inspiration
+
+It's based on this banner from WWDC 2013:
+
+<img src="http://hop.ie/seven/images/banner.jpeg" />
+
