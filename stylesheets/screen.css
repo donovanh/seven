@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* Mixins to extend what Compass provides */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  overflow: hidden; }
+
+.background {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  left: -100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(45deg);
+  -moz-transform: rotateX(45deg);
+  -ms-transform: rotateX(45deg);
+  -o-transform: rotateX(45deg);
+  transform: rotateX(45deg); }
+  .background:before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    bottom: 0;
+    left: -100%;
+    background: -webkit-radial-gradient(#d0d1d3 50%, white 52%);
+    background-size: 12px 12px;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg); }
+  .background:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -60%;
+    right: 0;
+    bottom: 0;
+    width: 300%;
+    height: 200%;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, white), color-stop(60%, rgba(255, 255, 255, 0))); }
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  position: relative; }
+  .container span.text {
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", Helvetica, Arial, Sans-serif;
+    font-size: 500px;
+    position: absolute;
+    top: 0; }
+    .container span.text.part1 {
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #67e1c9), color-stop(10%, #67e1c9), color-stop(40%, #60b6cf), color-stop(60%, #1f7acb), color-stop(80%, #212f7f));
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      -o-text-fill-color: transparent;
+      -ms-text-fill-color: transparent;
+      text-fill-color: transparent; }
+    .container span.text.part2 {
+      background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #c71f1f), color-stop(30%, #c71f1f), color-stop(40%, #a24b92), color-stop(50%, #3791ea), color-stop(60%, rgba(33, 47, 127, 0)));
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      -o-text-fill-color: transparent;
+      -ms-text-fill-color: transparent;
+      text-fill-color: transparent; }
+
+@media only screen and (max-height: 500px) {
+  .container {
+    width: 240px; }
+    .container span.text {
+      font-size: 400px; } }
+@media only screen and (max-height: 400px) {
+  .container {
+    width: 200px; }
+    .container span.text {
+      font-size: 340px; } }
+@media only screen and (max-height: 300px) {
+  .container {
+    width: 150px; }
+    .container span.text {
+      font-size: 260px; } }

@@ -1,0 +1,86 @@
+@import compass/reset
+@import compass/css3
+@import mixins
+
+.background-container
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  @include perspective(1200px)
+  overflow: hidden
+
+.background
+  width: 200%
+  height: 200%
+  position: absolute
+  left: -100%
+  @include transform-style(preserve-3d)
+  @include transform(rotateX(45deg))
+
+  &:before
+    content: ""
+    position: absolute
+    width: 300%
+    height: 300%
+    bottom: 0
+    left: -100%
+    background: -webkit-radial-gradient(#d0d1d3 50%, white 52%)
+    background-size: 12px 12px
+    @include transform(rotateZ(45deg))
+
+  &:after
+    content: ""
+    position: absolute
+    left: 0
+    top: -60%
+    right: 0
+    bottom: 0
+    width: 300%
+    height: 200%
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(255,255,255,0)))
+
+.container
+  width: 280px
+  margin: 0 auto
+  position: relative
+
+  span.text
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', Helvetica, Arial, Sans-serif
+    font-size: 500px
+    position: absolute
+    top: 0
+
+    &.part1
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#67e1c9), color-stop(10%,#67e1c9), color-stop(40%,rgba(96,182,207,1)), color-stop(60%,rgba(31,122,203,1)), color-stop(80%,rgba(33,47,127,1)))
+      @include background-clip(text)
+      @include text-fill-color(transparent)
+      
+
+    &.part2
+      background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#c71f1f), color-stop(30%,#c71f1f), color-stop(40%, #a24b92), color-stop(50%,#3791ea), color-stop(60%,rgba(33,47,127,0)))
+      @include background-clip(text)
+      @include text-fill-color(transparent)
+
+@media only screen and (max-height: 500px)
+  .container
+    width: 240px
+
+    span.text
+      font-size: 400px
+
+@media only screen and (max-height: 400px)
+  .container
+    width: 200px
+    
+    span.text
+      font-size: 340px
+
+@media only screen and (max-height: 300px)
+  .container
+    width: 150px
+    
+    span.text
+      font-size: 260px
+
