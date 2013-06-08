@@ -105,6 +105,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .container span.text {
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", Helvetica, Arial, Sans-serif;
     font-size: 780px;
+    font-weight: lighter;
     position: absolute;
     top: 0; }
     .container span.text.part1 {
