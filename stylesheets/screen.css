@@ -137,3 +137,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: scale(1.5) rotateX(45deg); }
     .background:after {
       top: -40%; } }
+@font-face {
+  font-family: "HelveticaNeue-UltraLight";
+  font-style: normal;
+  font-weight: 100;
+  src: local("HelveticaNeue-UltraLight"), local("HelveticaNeue-Ultra-Light"), url(https://denzfarid.googlecode.com/files/helveticaneueultralight-webfont.woff) format("woff"); }
