@@ -141,4 +141,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: "HelveticaNeue-UltraLight";
   font-style: normal;
   font-weight: 100;
-  src: local("HelveticaNeue-UltraLight"), local("HelveticaNeue-Ultra-Light"), url(https://denzfarid.googlecode.com/files/helveticaneueultralight-webfont.woff) format("woff"); }
+  src: local("HelveticaNeue-UltraLight"), local("HelveticaNeue-Ultra-Light"), url(/seven/fonts/helveticaneueultralight-webfont.woff) format("woff"); }
