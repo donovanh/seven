@@ -132,7 +132,9 @@ body {
   .container {
     width: 300px;
     height: 300px;
-    margin-left: -150px; }
+    margin-left: -150px;
+    border-radius: 80px;
+    margin-top: -150px; }
     .container span.text {
       font-size: 300px; } }
 @font-face {
