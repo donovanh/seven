@@ -1,17 +1,21 @@
 @import compass/reset
 @import compass/css3
 
+
+body
+  background: black
+
 .background-container
+  width: 100%
+  height: 740px
+  top: 50%
+  margin: -370px auto 0
   position: absolute
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
   @include perspective(1200px)
   overflow: hidden
 
 .background
-  width: 200%
+  width: 300%
   height: 200%
   position: absolute
   left: -100%
@@ -25,8 +29,8 @@
     height: 300%
     bottom: 0
     left: -100%
-    background: -webkit-radial-gradient(#d0d1d3 50%, white 52%)
-    background-size: 12px 12px
+    background: -webkit-radial-gradient(#d0d1d3 40%, white 65%)
+    background-size: 14px 14px
     @include transform(rotateZ(45deg))
 
   &:after
@@ -41,16 +45,24 @@
     background: -webkit-gradient(linear, center top, center bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(60%,rgba(255,255,255,0)))
 
 .container
-  width: 420px
-  margin: 0 auto
-  position: relative
+  width: 512px
+  height: 512px
+  position: absolute
+  left: 50%
+  margin-left: -256px
+  top: 50%
+  margin-top: -256px
+  background: white
+  border-radius: 120px
+  overflow: hidden
 
   span.text
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', Roboto, Arial, Sans-serif
-    font-size: 780px
+    font-size: 512px
     font-weight: lighter
     position: absolute
     top: 0
+    left: 124px
 
     &.part1
       background: -webkit-gradient(linear, left top, right top, color-stop(0%,#67e1c9), color-stop(10%,#67e1c9), color-stop(40%,rgba(96,182,207,1)), color-stop(60%,rgba(31,122,203,1)), color-stop(80%,rgba(33,47,127,1)))
@@ -62,29 +74,6 @@
       background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#c71f1f), color-stop(30%,#c71f1f), color-stop(40%, #a24b92), color-stop(50%,#3791ea), color-stop(60%,rgba(33,47,127,0)))
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
-
-@media only screen and (max-height: 660px)
-  .container
-    width: 380px
-
-    span.text
-      font-size: 640px
-
-@media only screen and (max-height: 540px)
-  .container
-    width: 250px
-    margin-top: -40px
-    
-    span.text
-      font-size: 450px
-
-@media only screen and (min-height: 800px)
-  .background
-    @include transform(scale(1.5) rotateX(45deg))
-
-    &:after
-      top: -40%
-
 
 @font-face 
   font-family: 'HelveticaNeue-UltraLight'
