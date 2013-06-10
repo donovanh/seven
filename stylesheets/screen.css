@@ -136,7 +136,8 @@ body {
     border-radius: 80px;
     margin-top: -150px; }
     .container span.text {
-      font-size: 300px; } }
+      font-size: 300px;
+      left: 60px; } }
 @font-face {
   font-family: "HelveticaNeue-UltraLight";
   font-style: normal;
