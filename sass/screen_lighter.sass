@@ -2,14 +2,16 @@
 @import compass/css3
 
 body
-  background: black
+  background: white
 
 .container
-  height: 740px
+  height: 100%
   width: 100%
-  margin: 50px auto
+  max-height: 740px
+  top: 50%
+  margin-top: -370px
   overflow: hidden
-  position: relative
+  position: absolute
   +perspective(1200px)
 
 .bg
