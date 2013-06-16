@@ -12,6 +12,8 @@ See [a live demo](http://hop.ie/seven). It should look something like this:
 
 Update: Since the keynote, I've added a white app icon-style background
 
+Update 2: Keith Chu (twitter: @Catharsis / github: keithchu) has been kind enough to make an amazing lighter version of the CSS. I've added it to this repo as "lighter.html" and "screen_lighter.sass/css". Thanks!
+
 ## Inspiration
 
 It's based on this banner from WWDC 2013:
