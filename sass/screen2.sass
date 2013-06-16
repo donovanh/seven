@@ -1,0 +1,71 @@
+@import compass/reset
+@import compass/css3
+
+body
+  background: black
+
+.container
+  height: 740px
+  width: 100%
+  margin: 50px auto
+  overflow: hidden
+  position: relative
+  +perspective(1200px)
+
+.bg
+  height: 200%
+  position: absolute
+  top: 0
+  left: -100%
+  +transform(rotateX(45deg))
+  +transform-style(preserve-3d)
+  width: 300%
+  &:before, &:after
+    content: ""
+    position: absolute
+    bottom: 0
+    width: 300%
+  &:before
+    +background(radial-gradient(#d0d1d3 40%, white 65%))
+    background-size: 14px 14px
+    height: 300%
+    left: -100%
+    +transform(rotateZ(45deg))
+  &:after
+    +background(linear-gradient(top center, white 0%, rgba(white,0) 60%))
+    left: 0
+    height: 200%
+    right: 0
+    top: -60%
+
+.seven
+  background: white
+  border-radius: 120px
+  height: 512px
+  margin-left: -256px
+  margin-top: -256px
+  overflow: hidden
+  position: absolute
+  left: 50%
+  top: 50%
+  width: 512px
+  &:before
+    +background(linear-gradient(left bottom, #c71f1f 30%, #a24b92 40%, #3791ea 50%, rgba(33,47,127,0) 60%), linear-gradient(left, #67e1c9 10%, #60b6cf 40%, #1f7acb 60%, #212f7f 80%))
+    +background-clip(text)
+    content: "7"
+    font: lighter 512px/1 "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", Roboto, Arial, Sans-serif
+    position: absolute
+    left: 124px
+    top: 0
+    -webkit-text-fill-color: transparent
+
+@media only screen and (max-width: 350px)
+  .seven
+    width: 300px
+    height: 300px
+    margin-left: -150px
+    border-radius: 80px
+    margin-top: -150px
+    &:before
+      font-size: 300px
+      left: 70px
