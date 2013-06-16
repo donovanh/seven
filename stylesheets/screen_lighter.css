@@ -52,10 +52,10 @@ body {
   height: 100%;
   width: 100%;
   max-height: 740px;
+  position: absolute;
   top: 50%;
   margin-top: -370px;
   overflow: hidden;
-  position: absolute;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
